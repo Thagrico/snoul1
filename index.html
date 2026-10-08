@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/png" href="icon-192.png">
+  <link rel="apple-touch-icon" href="icon-192.png">
+
+  <meta name="theme-color" content="#4CAF50">
+  <meta name="apple-mobile-web-app-title" content="Thagrico.map">
+
+  <title>Thagrico.map – SN</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 20px;
+    }
+    h1 {
+      font-size: 3em;
+      margin-bottom: 40px;
+    }
+    .logo {
+      width: 192px;
+      height: 192px;
+    }
+    .flags {
+      margin-top: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 25px;
+      flex-wrap: nowrap;
+    }
+    .flags img {
+      width: 180px;
+      max-width: 40vw;
+      height: auto;
+      cursor: pointer;
+      border: 2px solid #ccc;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .flags img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    }
+    #content {
+      font-size: 2em;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Chào mừng bạn đến với Thagrico.map – KLH SN!</h1>
+
+  <img src="icon-192.png" alt="Logo" class="logo">
+
+  <div class="flags">
+    <a href="klh.html?lang=vi">
+      <img src="VN.png" alt="Tiếng Việt">
+    </a>
+    <a href="klh.html?lang=en">
+      <img src="UK.png" alt="English">
+    </a>
+  </div>
+
+  <p id="content">Welcome to Thagrico.map – SN!</p>
+</body>
+</html>

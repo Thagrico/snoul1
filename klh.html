@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#4CAF50">
+<title>Khu liên hợp SN - Thagrico.map</title>
+<style>
+*{box-sizing:border-box}body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;font-family:Arial,sans-serif;background:#eef4f0;color:#18452a;text-align:center;padding:24px}
+main{background:#fff;border-radius:20px;box-shadow:0 8px 32px #133b2220;padding:36px 28px;max-width:560px;width:100%}.logo{width:108px;height:108px;object-fit:contain}h1{font-size:clamp(23px,5vw,36px);margin:20px 0 10px}p{font-size:18px;color:#50695a;margin:10px 0 28px}.btn{display:inline-block;background:#24743a;color:#fff;text-decoration:none;border-radius:12px;padding:17px 30px;font-size:20px;font-weight:700;box-shadow:0 3px 8px #0002}.btn:hover{background:#155728}.back{display:block;margin-top:28px;font-size:14px;color:#41644c}
+</style></head><body><main><img src="icon-192.png" class="logo" alt="Logo Thagrico">
+<h1 id="name">KHU LIÊN HỢP SN</h1>
+<p id="instruction">Nhấn nút bên dưới để xem bản đồ GIS của khu liên hợp SN.</p>
+<a class="btn" href="map.html" id="open">MỞ BẢN ĐỒ</a>
+<a class="back" href="index.html" id="back">← Quay lại chọn ngôn ngữ</a>
+</main><script>
+if(new URLSearchParams(location.search).get('lang')==='en'){
+ document.documentElement.lang='en';
+ document.getElementById('name').textContent='AGRICULTURAL COMPLEX SN';
+ document.getElementById('instruction').textContent='Select the button below to view the GIS map of SN.';
+ document.getElementById('open').textContent='OPEN GIS MAP';
+ document.getElementById('back').textContent='← Back to language selection';
+}
+</script></body></html>
